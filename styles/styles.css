@@ -1,18 +1,23 @@
 body {
-    background-color: #FCFCFC;
+    background-color: #212122;
     margin: 0;
     padding: 0;
 }
 
-.bg-img {
+.bg-img-container {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
     filter: blur(5px);
     position: absolute;
     object-fit: cover;
-    background-image: url("../assets/images/bg-img.jpg");
+    /* background-image: url("../assets/images/bg-img.jpg"); */
+}
+
+.bg-image {
+    height: 100%;
+    width: 100%;
 }
 
 /* ----------------Navbar---------------- */
@@ -39,17 +44,25 @@ body {
     list-style: none;
     display: flex;
     gap: 70px;
+    align-items: baseline;
 }
 
 .menu-items-container ul li a {
     text-decoration: none;
-    font-size: 22px;
+    font-size: 18px;
     color: #ffffff;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 .menu-items-container ul li a:hover {
     color: #0085FF;
+    text-decoration: underline;
+}
+
+.nav-link-title {
+    font-size: 26px !important;
+    font-weight: 900 !important;
+
 }
 
 /* ----------------Navbar Ends---------------- */
@@ -58,9 +71,9 @@ body {
 /* ----------------Body Content ---------------- */
 .body-section {
     height: auto;
-    width: 100%;
     padding: 20px;
-    position: absolute;
+    /* width: 95%; */
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,7 +101,9 @@ body {
 .know-me-btn {
     background-color: #0085FF;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 13px 30px;
+    color: #FCFCFC;
+    text-decoration: none;
 }
 
 
